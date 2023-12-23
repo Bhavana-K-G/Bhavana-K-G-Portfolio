@@ -1,7 +1,8 @@
 import React from "react";
 import Project from "./Project";
 import Recipe from "../../assets/apps/recipe.png";
-import TodoApp from "../../assets/apps/TodoApp.png";
+import BMI from "../../assets/apps/bmicalc.png";
+import ZibberApp from "../../assets/apps/zibberapp.png";
 import SocialApp from "../../assets/apps/SocialApp.png";
 import BookingApp from "../../assets/apps/BookingApp.png";
 import Employee from "../../assets/apps/employee.png";
@@ -19,35 +20,43 @@ const MyProjects = () => {
       description: "Recipe Book built on web applications"
     },
     {
-      name: "Todo App",
-      logo: TodoApp,
-      tags: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
-      github: "https://github.com/madan3242/React-Js/tree/main/Apps/TodoApp",
-      live: "https://github.com/madan3242/React-Js/tree/main/Apps/TodoApp",
-      description: "Todo application built on React"
+      name: "BMI Calculator",
+      logo: BMI,
+      tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      github: "",
+      live: "",
+      description: "BMI Calculatorbuilt on web applications"
+    },
+    {
+      name: "Zibber App",
+      logo: ZibberApp,
+      tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "React"],
+      github: "https://github.com/Bhavana-K-G/Zibber-App",
+      live: "https://zibber-app.vercel.app/",
+      description: "zibber application built on React"
     },
     {
       name: "Employee Management",
       logo: Employee,
       tags: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
-      github: "https://github.com/madan3242/Employee-Management-System",
-      live: "https://github.com/madan3242/Employee-Management-System",
+      github: "https://github.com/Bhavana-K-G/Employee-Management-System",
+      live: "",
       description: "Employee Management System is MERN app built to demonstrate the working of CRUD"
     },
     {
       name: "Social App",
       logo: SocialApp,
       tags: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
-      github: "https://github.com/madan3242/MERN/tree/main/SocialApp",
-      live: "https://github.com/madan3242/MERN/tree/main/SocialApp",
+      github: "https://github.com/Bhavana-K-G/sociopedia-app",
+      live: "",
       description: "Social media application built using MERN stack"
     },
     {
       name: "Booking App",
       logo: BookingApp,
       tags: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
-      github: "https://github.com/madan3242/MERN/tree/main/BookingApp",
-      live: "https://github.com/madan3242/MERN/tree/main/BookingApp",
+      github: "https://github.com/Bhavana-K-G/Booking-App",
+      live: "",
       description: "Hotel booking application built using MERN stack"
     },
   ];
