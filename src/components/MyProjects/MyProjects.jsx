@@ -6,6 +6,7 @@ import ZibberApp from "../../assets/apps/zibberapp.png";
 import SocialApp from "../../assets/apps/SocialApp.png";
 import BookingApp from "../../assets/apps/BookingApp.png";
 import Employee from "../../assets/apps/employee.png";
+import GST from "../../assets/apps/gst.png"
 import { Col, Container, Row } from "react-bootstrap";
 import "./MyProjects.css";
 
@@ -23,8 +24,8 @@ const MyProjects = () => {
       name: "BMI Calculator",
       logo: BMI,
       tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      github: "",
-      live: "",
+      github: "https://github.com/Bhavana-K-G/BMI-Calculator",
+      live: "https://bmi-calculator-blond-sigma.vercel.app/",
       description: "BMI Calculatorbuilt on web applications"
     },
     {
@@ -36,15 +37,7 @@ const MyProjects = () => {
       description: "zibber application built on React"
     },
     {
-      name: "Employee Management",
-      logo: Employee,
-      tags: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
-      github: "https://github.com/Bhavana-K-G/Employee-Management-System",
-      live: "",
-      description: "Employee Management System is MERN app built to demonstrate the working of CRUD"
-    },
-    {
-      name: "Social App",
+      name: "SocioPedia",
       logo: SocialApp,
       tags: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
       github: "https://github.com/Bhavana-K-G/sociopedia-app",
@@ -58,6 +51,22 @@ const MyProjects = () => {
       github: "https://github.com/Bhavana-K-G/Booking-App",
       live: "",
       description: "Hotel booking application built using MERN stack"
+    },
+    {
+      name: "GST-Search",
+      logo: GST,
+      tags: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
+      github: "https://github.com/Bhavana-K-G/GST-Search",
+      live: "",
+      description: "GST-Search is MERN app built to demonstrate the working of CRUD"
+    },
+    {
+      name: "Employee Management",
+      logo: Employee,
+      tags: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
+      github: "https://github.com/Bhavana-K-G/Employee-Management-System",
+      live: "",
+      description: "Employee Management System is MERN app built to demonstrate the working of CRUD"
     },
   ];
   return (
