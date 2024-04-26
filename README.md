@@ -1,2 +1,1 @@
-"# Madan-Gowda" 
-"# Bhavana-K-G-Portfolio" 
+"# Bhavana-K-G-Portfolio"
