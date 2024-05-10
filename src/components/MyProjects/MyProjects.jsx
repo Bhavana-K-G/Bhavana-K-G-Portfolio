@@ -45,25 +45,25 @@ const MyProjects = () => {
       description: "Social media application built using MERN stack"
     },
     {
-      name: "Booking App",
+      name: "StaySphere App",
       logo: BookingApp,
-      tags: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
+      tags: ["HTML","CSS","Javascript","Bootstrap","Reactjs", "Nodejs","Expressjs","MongoDB"],
       github: "https://github.com/Bhavana-K-G/Booking-App",
       live: "",
       description: "Hotel booking application built using MERN stack"
     },
     {
-      name: "GST-Search",
+      name: "Tax-Track",
       logo: GST,
-      tags: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
+      tags: ["HTML","CSS","Javascript","Bootstrap","Reactjs", "Nodejs","Expressjs","MongoDB"],
       github: "https://github.com/Bhavana-K-G/GST-Search",
       live: "",
       description: "GST-Search is MERN app built to demonstrate the working of CRUD"
     },
     {
-      name: "Employee Management",
+      name: "StaffTrackr System",
       logo: Employee,
-      tags: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
+      tags: ["HTML","CSS","Javascript","Bootstrap","Reactjs", "Nodejs","Expressjs","MongoDB"],
       github: "https://github.com/Bhavana-K-G/Employee-Management-System",
       live: "",
       description: "Employee Management System is MERN app built to demonstrate the working of CRUD"
