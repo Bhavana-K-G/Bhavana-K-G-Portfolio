@@ -7,15 +7,17 @@ import css from "../../assets/logos/css.png";
 import js from "../../assets/logos/js.png";
 import bs from "../../assets/logos/bs.png";
 import react from "../../assets/logos/react.png";
-import redux from "../../assets/logos/redux.png";
-import express from "../../assets/logos/express.png";
+
 import node from "../../assets/logos/node.png";
 import mongodb from "../../assets/logos/mongodb.png";
 import mysql from "../../assets/logos/mysql.png";
 import git from "../../assets/logos/git.png";
 import github from "../../assets/logos/github.png";
-import Java from "../../assets/logos/Java.png";
 import Python from "../../assets/logos/Python.png";
+import Frappe from "../../assets/logos/Frappe.png";
+import redux from "../../assets/logos/redux.png";
+import express from "../../assets/logos/express.png";
+import Java from "../../assets/logos/Java.png";
 
 
 import { Col, Container, Row } from "react-bootstrap";
@@ -27,15 +29,13 @@ const MySkills = () => {
     { name: "JavaScript", logo: js },
     { name: "Bootstrap", logo: bs },
     { name: "React", logo: react },
-    { name: "Redux", logo: redux },
     { name: "Nodejs", logo: node },
-    { name: "Express", logo: express },
     { name: "MongoDB", logo: mongodb },
     { name: "MySQL", logo: mysql },
     { name: "Git", logo: git },
     { name: "Github", logo: github },
-    { name: "Java", logo: Java },
     { name: "Python", logo: Python },
+    { name: "Frappe", logo: Frappe}
   ];
   return (
     <>
