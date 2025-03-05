@@ -12,8 +12,7 @@ const AboutMe = () => {
           </div>
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <p>Versatile Full Stack Developer | Proficient in HTML, CSS, Bootstrap, Javascript, React.js, Node.js, Express.js, Mongo DB, MySQL, Java, Python | Skilled in crafting robust and scalable web applications | Passionate about delivering high-quality software solutions for optimal user experiences.</p>
-              <p>With 6 Months of hands-on experience,Committed to delivering innovative solutions for optimal user experiences. My expertise lies in full-stack development, where I blend creativity and technical prowess to deliver exceptional solutions.</p>
+              <p>Software Developer with experience in Web Development and Data Science.Worked on building web applications, interactive dashboards, and data processing systems.Proficient in Python, Javascript, Frappe, and custom UI/UX integrations.Passionate about creating efficient, user-friendly, and data-driven solutions.Continuously exploring new technologies to improve software development.</p>
             </div>
           </div>
         </div>
