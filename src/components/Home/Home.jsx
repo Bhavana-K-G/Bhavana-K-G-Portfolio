@@ -8,7 +8,7 @@ const Home = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Software Developer.", "Frappe Developer.", "Web Developer."],
+      strings: ["Software Developer.","Web Developer.","Frappe Developer."],
       startDelay: 300,
       typeSpeed: 100,
       backSpeed: 100,
@@ -27,7 +27,7 @@ const Home = () => {
           <Col>
             <div className="home text-center">
               <div className="heading">
-                <h2 className="slide-up">Hello I'm</h2>
+                <h2 className="slide-up">Hello, I'm</h2>
                 <h1 className="slide-up">Bhavana K G</h1>
                 <h2 className="slide-up">I'm a <span ref={el}></span></h2>
               </div>
