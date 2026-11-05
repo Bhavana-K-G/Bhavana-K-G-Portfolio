@@ -303,3 +303,87 @@ footer svg{width:15px;height:15px}
 .tagline.role-line{color:var(--ink);font-weight:600;font-size:clamp(1.15rem,2vw,1.4rem)}
 .contact h2.big{margin-top:1.2rem}
 .msg .btn{align-self:flex-start}
+
+/* ===== Phone layout (≤640px): denser cards, swipeable projects ===== */
+@media (max-width:640px){
+  section{padding:2.25rem 0}
+  .hero{padding-top:1.5rem;padding-bottom:2rem;gap:1.5rem}
+  .hero h1{font-size:clamp(2.2rem,10.5vw,2.9rem);margin-top:.9rem}
+  .role{gap:.4rem;margin-top:1rem}
+  .chip{font-size:.84rem;padding:.4rem .65rem}
+  .actions{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin-top:1.25rem}
+  .actions .btn{justify-content:center;padding:.7rem .8rem}
+  .actions .btn.primary{grid-column:1 / -1}
+  .mapnow{gap:.4rem;padding:.6rem}
+  .mapnow span{font-size:.8rem}
+
+  .head{gap:.7rem}
+  .head .ico{width:40px;height:40px;border-radius:12px}
+  .head .ico svg{width:20px;height:20px}
+  .sub{margin:0 0 1.25rem;font-size:.95rem}
+  .card{border-radius:16px}
+
+  .stats{gap:.6rem}
+  .stat{flex-direction:column;align-items:flex-start;gap:.6rem;padding:.95rem}
+  .stat .bigico{width:42px;height:42px;border-radius:12px}
+  .stat .bigico svg{width:20px;height:20px}
+  .about{gap:.6rem;margin-top:.6rem}
+  .about .intro,.domains{padding:1.15rem}
+  .about .intro{font-size:1rem}
+
+  .builds{gap:.75rem}
+  .build{padding:1.1rem;gap:.8rem}
+  .build .bigico{width:48px;height:48px;border-radius:14px}
+  .build .bigico svg{width:24px;height:24px}
+  .build p{min-height:0}
+  .feat{font-size:.78rem}
+
+  .roles{gap:.75rem}
+  .roleCard{grid-template-columns:auto minmax(0,1fr);padding:1rem;gap:.7rem .85rem}
+  .logo{width:42px;height:42px;border-radius:12px}
+  .logo svg{width:20px;height:20px}
+  .roleCard h3{font-size:1.05rem}
+  .org{font-size:.84rem}
+  .when{justify-self:start;font-size:.78rem;padding:.25rem .6rem}
+  .hl{gap:.4rem}
+  .hl span{font-size:.8rem;padding:.35rem .55rem;border-radius:8px}
+  .hl svg{width:14px;height:14px}
+
+  .process{grid-template-columns:1fr;gap:.6rem}
+  .pstep{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:.85rem;row-gap:.15rem;align-items:start;padding:1rem}
+  .pstep .bigico{grid-row:1 / span 2;width:42px;height:42px;border-radius:12px}
+  .pstep .bigico svg{width:20px;height:20px}
+  .pstep h3{font-size:1rem;align-self:end}
+
+  .filters{gap:.4rem;margin-bottom:1rem}
+  .filters button{font-size:.82rem;padding:.4rem .75rem}
+  .projects{display:flex;gap:.75rem;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;
+    margin:0 -1.1rem;padding:0 1.1rem .5rem;scroll-padding:0 1.1rem;scrollbar-width:none}
+  .projects::-webkit-scrollbar{display:none}
+  .proj{flex:0 0 82%;scroll-snap-align:start}
+  .proj .body{padding:1rem}
+
+  .skills{gap:.6rem}
+  .skill{padding:1rem}
+  .skill .top{margin-bottom:.7rem}
+  .pills{gap:.35rem}
+  .pills span{font-size:.78rem}
+
+  .edus{gap:.6rem}
+  .edu{padding:1.1rem;gap:.85rem;align-items:flex-start}
+  .edu .bigico{width:46px;height:46px;border-radius:13px}
+  .edu .bigico svg{width:23px;height:23px}
+  .edu > div:not(.cgpa){flex:1 1 calc(100% - 70px);min-width:0}
+  .edu h3{font-size:1.05rem}
+  .edu p{font-size:.86rem}
+  .pursuing,.cgpa{margin-left:61px}
+  .cgpa b{font-size:1.8rem}
+
+  .contact h2.big{font-size:clamp(1.8rem,8.5vw,2.3rem);margin-top:.6rem}
+  .contact .grid2{gap:.75rem;margin-top:1.25rem}
+  .links{grid-template-columns:1fr;gap:.6rem}
+  .links a,.links button{flex-direction:row;align-items:center;gap:.85rem;padding:.85rem 1rem}
+  .links .bigico{width:40px;height:40px;border-radius:12px}
+  .msg{padding:1.1rem}
+  footer{padding-bottom:5.5rem}
+}
