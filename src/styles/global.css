@@ -357,10 +357,6 @@ footer svg{width:15px;height:15px}
 
   .filters{gap:.4rem;margin-bottom:1rem}
   .filters button{font-size:.82rem;padding:.4rem .75rem}
-  .projects{display:flex;gap:.75rem;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;
-    margin:0 -1.1rem;padding:0 1.1rem .5rem;scroll-padding:0 1.1rem;scrollbar-width:none}
-  .projects::-webkit-scrollbar{display:none}
-  .proj{flex:0 0 82%;scroll-snap-align:start}
   .proj .body{padding:1rem}
 
   .skills{gap:.6rem}
@@ -386,4 +382,34 @@ footer svg{width:15px;height:15px}
   .links .bigico{width:40px;height:40px;border-radius:12px}
   .msg{padding:1.1rem}
   footer{padding-bottom:5.5rem}
+}
+
+/* ===== Scroll reveal (projects) ===== */
+.reveal{opacity:0;transform:translateY(28px) scale(.98);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* ===== Phone: no sidebar, profile in hero, fixed bottom bar ===== */
+.mprofile,.mobilebar,.topbar .theme-m{display:none}
+@media (max-width:640px){
+  aside,.scrim,.topbar .menu-btn{display:none !important}
+  .topbar .theme-m{display:grid}
+  .hero > div > .status{display:none}
+  .mprofile{display:flex;align-items:center;gap:1rem}
+  .mprofile .avatar{width:84px;height:84px;flex:none}
+  .mprofile .avatar svg.ring{width:96px;height:96px}
+  .mprofile .avatar .live{border-color:var(--paper)}
+  .mprofile .status{display:inline-flex}
+  .projects{gap:.85rem}
+  .mobilebar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:15;justify-content:space-around;align-items:center;
+    padding:.5rem 1rem calc(.5rem + env(safe-area-inset-bottom,0px));
+    background:var(--paper);background:color-mix(in srgb,var(--paper) 92%,transparent);
+    -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .mobilebar a{display:flex;flex-direction:column;align-items:center;gap:.2rem;min-width:72px;padding:.35rem .6rem;border-radius:12px;font-size:.72rem;font-weight:600;color:var(--muted)}
+  .mobilebar a svg{width:22px;height:22px;color:var(--ink)}
+  .mobilebar a:active{background:var(--surface)}
+  main{padding-bottom:calc(66px + env(safe-area-inset-bottom,0px))}
+  footer{padding-bottom:1.5rem}
+  .totop{bottom:calc(env(safe-area-inset-bottom,0px) + 78px)}
+  .toast{bottom:calc(env(safe-area-inset-bottom,0px) + 82px)}
 }

@@ -16,6 +16,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import BackToTop from './components/BackToTop'
 import Toast from './components/Toast'
+import MobileBar from './components/MobileBar'
 
 const sectionIds = nav.map((n) => n.id)
 
@@ -42,7 +43,7 @@ export default function App() {
 
   return (
     <>
-      <Topbar open={open} onToggle={() => setOpen((o) => !o)} />
+      <Topbar open={open} onToggle={() => setOpen((o) => !o)} theme={theme} />
       <div className="scrim" onClick={() => setOpen(false)} />
       <Sidebar active={active} onNavigate={() => setOpen(false)} theme={theme} />
       <main>
@@ -57,6 +58,7 @@ export default function App() {
         <Contact toast={toast} />
         <Footer />
       </main>
+      <MobileBar />
       <BackToTop />
       <Toast message={toastMsg} />
     </>

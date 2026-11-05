@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { ExternalLink, FolderGit2, Github } from 'lucide-react'
 import { projectFilters, projects } from '../data/portfolio'
 import SectionHead from './SectionHead'
+import { useReveal } from '../hooks/useReveal'
 
 export default function Projects() {
   const [filter, setFilter] = useState('all')
@@ -16,21 +17,26 @@ export default function Projects() {
         ))}
       </div>
       <div className="projects">
-        {visible.map(({ title, text, image, tags, code, live }) => (
-          <article key={title} className="card proj">
-            <div className="shot"><img src={image} alt={`${title} screenshot`} loading="lazy" /></div>
-            <div className="body">
-              <h3>{title}</h3>
-              <p>{text}</p>
-              <div className="ptags">{tags.map((t) => <span key={t}>{t}</span>)}</div>
-              <div className="plinks">
-                <a href={code} target="_blank" rel="noopener noreferrer"><Github />Code</a>
-                {live && <a href={live} target="_blank" rel="noopener noreferrer"><ExternalLink />Live</a>}
-              </div>
-            </div>
-          </article>
-        ))}
+        {visible.map((p, i) => <ProjectCard key={p.title} {...p} delay={(i % 3) * 80} />)}
       </div>
     </div></section>
+  )
+}
+
+function ProjectCard({ title, text, image, tags, code, live, delay }) {
+  const [ref, revealClass] = useReveal()
+  return (
+    <article ref={ref} className={`card proj ${revealClass}`} style={{ transitionDelay: `${delay}ms` }}>
+      <div className="shot"><img src={image} alt={`${title} screenshot`} loading="lazy" /></div>
+      <div className="body">
+        <h3>{title}</h3>
+        <p>{text}</p>
+        <div className="ptags">{tags.map((t) => <span key={t}>{t}</span>)}</div>
+        <div className="plinks">
+          <a href={code} target="_blank" rel="noopener noreferrer"><Github />Code</a>
+          {live && <a href={live} target="_blank" rel="noopener noreferrer"><ExternalLink />Live</a>}
+        </div>
+      </div>
+    </article>
   )
 }
